@@ -10,15 +10,15 @@ import java.io.IOException;
 public class MovieDataConvert {
 	
 	/**
-	 * cat u.data | -f1,2,3 tr "\\t" ","
+	 * cat t.data | -f1,2,3 tr "\\t" ","
 	 * @throws IOException 
 	 * 
 	 */
 
 	public static void main(String[] args) throws IOException {
 		
-		BufferedReader br = new BufferedReader(new FileReader("data/u.data"));
-		BufferedWriter bw = new BufferedWriter(new FileWriter("data/movies.csv"));
+		BufferedReader br = new BufferedReader(new FileReader("data/t.data"));
+		BufferedWriter bw = new BufferedWriter(new FileWriter("data/tables.csv"));
 	
 		String line;
 		while((line = br.readLine()) != null) {
